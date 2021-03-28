@@ -271,6 +271,7 @@ table {
 
 .home__wrapper .home__container__contacts ul li {
   width: 33.333%;
+  min-width: 197px;
   min-height: 55px;
   font-size: 18px;
   display: -webkit-box;
@@ -303,6 +304,7 @@ table {
 
 header {
   width: 48.49%;
+  min-width: 515px;
   margin: 0 auto;
 }
 
@@ -336,6 +338,10 @@ header nav ul li a {
   font-size: 21px;
 }
 
+header nav ul li a svg {
+  display: none;
+}
+
 header nav ul li:hover {
   border-bottom: 1px solid #fff;
   -webkit-transition: all 0.1s ease-out 0.1s;
@@ -358,4 +364,116 @@ h1 {
   width: 83.3333333%;
   height: 100%;
   margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+  body .home__wrapper .home .home__background-img picture {
+    max-width: 150px;
+  }
+
+  body .home__wrapper .home .home__background-img picture img {
+    width: 100%;
+    max-width: 150px;
+  }
+
+  body .home__wrapper .home .home__container .home__container__contacts {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1023px) {
+  body .home__wrapper .home .home__container .home__container__title {
+    min-width: 422px;
+  }
+
+  body .home__wrapper .home .home__container .home__container__title h1 {
+    font-size: 52px;
+  }
+
+  body .home__wrapper .home .home__container .home__container__title span,
+  body .home__wrapper .home .home__container .home__container__title button {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 920px) {
+  body .home__wrapper .home .home__background-img {
+    display: none;
+  }
+}
+
+@media (max-width: 890px) {
+  body .home__wrapper .home .home__container .home__container__contacts ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 200px;
+  }
+
+  body .home__wrapper .home .home__container .home__container__contacts ul li {
+    min-height: 45px;
+  }
+}
+
+@media (max-width: 635px) {
+  body .home__wrapper .home .home__container header {
+    width: 100%;
+    min-width: 200px;
+  }
+
+  body .home__wrapper .home .home__container header nav ul li {
+    height: 60px;
+  }
+
+  body .home__wrapper .home .home__container header nav ul li a {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  body .home__wrapper .home .home__container header nav ul li a svg {
+    display: block;
+    width: 100%;
+    height: 55%;
+    fill: #fff;
+  }
+
+  body .home__wrapper .home .home__container header nav ul li a span {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  body {
+    min-width: 380px;
+  }
+
+  body .home__wrapper .home .home__container .home__container__title {
+    min-width: 316px;
+    min-height: 150px;
+  }
+
+  body .home__wrapper .home .home__container .home__container__title h1 {
+    font-size: 42px;
+  }
+
+  body .home__wrapper .home .home__container .home__container__title span,
+  body .home__wrapper .home .home__container .home__container__title button {
+    font-size: 18px;
+  }
+
+  body .home__wrapper .home .home__container .home__container__title button {
+    margin-top: 20px;
+  }
 }
