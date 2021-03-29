@@ -476,4 +476,30 @@ h1 {
   body .home__wrapper .home .home__container .home__container__title button {
     margin-top: 20px;
   }
+
+  ._container {
+    width: 90%;
+  }
+
+  body {
+    min-width: 350px;
+  }
+
+  body .home__wrapper .home .home__container .home__container__title {
+    min-width: 316px;
+    min-height: 150px;
+  }
+
+  body .home__wrapper .home .home__container .home__container__title h1 {
+    font-size: 36px;
+  }
+
+  body .home__wrapper .home .home__container .home__container__title span,
+  body .home__wrapper .home .home__container .home__container__title button {
+    font-size: 16px;
+  }
+
+  body .home__wrapper .home .home__container .home__container__title button {
+    margin-top: 20px;
+  }
 }
