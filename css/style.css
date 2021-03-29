@@ -503,3 +503,18 @@ h1 {
     margin-top: 20px;
   }
 }
+
+@media (max-height: 823px) {
+  body {
+    min-height: 100vh;
+  }
+
+  body .home__wrapper .home .home__container {
+    height: 93.31%;
+    padding: 20px 0;
+  }
+
+  body .home__wrapper .home .home__container .home__container__contacts ul {
+    min-height: 170px;
+  }
+}
